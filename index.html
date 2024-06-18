@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+
+     <!--Menu-->
+
+    <nav class="nav-bar">
+      <div class="logo">
+        <h1><img src="imgs/logo.restaurante.branco.png" alt="logomarca"></h1>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#quem-somos" class="nav-link">Quem somos</a></li>
+          <li class="nav-item"><a href="#fale-conosco" class="nav-link"> Fale conosco</a></li>
+        </ul>
+      </div>
+      <div class="login-button">
+        <button><a href=" https://wa.me/556100000000"><img src="imgs/logo_whatzzap.png" alt="logo_whatzapp"></a></button>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#quem-somos" class="nav-link">Quem somos</a></li>
+        <li class="nav-item"><a href="#fale-conosco" class="nav-link">Fale conosco</a></li>
+      </ul>
+
+      <div class="login-button">
+        <button><a href="https://wa.me/556100000000">WHATZAPP</a></button>
+      </div>
+    </div>
+  </header>
+
+  <!--Carrocel-->
+
+  <section id="home">
+  <div class="conteianer-carrossel">
+    <div class="carousel">
+      <div class="carousel-images">
+          <div class="carousel-item">
+              <img src="imgs/banner_1.png" alt="Imagem 1">
+          </div>
+          <div class="carousel-item">
+              <img src="imgs/banner_2.png" alt="Imagem 2">
+          </div>
+      </div>
+      <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+      <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  </section>
+    
+  <!--Quem somos-->
+
+  <section id="quem-somos">
+  <div class="quem_somos">
+    <table class="tb_quem_somos">
+      <tr>
+        <td>
+          <img src="imgs/img_restaurante.png" alt="imagem_restaurante">
+        </td>
+        <td>
+          <p class="texto_rest" ; style="text-align: justify; margin: 100px; font-size: 18px;">
+            Bem-vindo ao Restaurante Paladar, onde a tradição e o sabor autêntico da culinária brasileira ganham vida!
+            <br><br>
+            Aqui no Restaurante Paladar, nós nos dedicamos a oferecer uma experiência gastronômica que vai além do
+            paladar. Cada prato é preparado com ingredientes frescos e selecionados, trazendo o melhor das diversas
+            regiões do nosso país para a sua mesa. Do tempero vibrante da Bahia à suculência das carnes do Sul, nossa
+            cozinha celebra a diversidade e a riqueza da culinária brasileira.
+            <br><br>
+            Nossa equipe de chefs talentosos combina técnicas tradicionais com um toque de criatividade, garantindo que
+            cada refeição seja uma verdadeira viagem pelos sabores do Brasil. Seja para saborear uma feijoada
+            tradicional, se deliciar com uma moqueca capixaba ou experimentar o irresistível pão de queijo mineiro,
+            temos algo especial para todos os gostos.
+            <br><br>
+            Nós acreditamos que cada refeição deve ser uma celebração. Nosso ambiente acolhedor e festivo é perfeito
+            para reunir a família, amigos ou colegas de trabalho, criando momentos inesquecíveis ao redor de uma mesa
+            farta e repleta de alegria.
+            <br><br>
+            Venha nos visitar e descubra por que o Restaurante Paladar é o destino ideal para quem busca autenticidade,
+            qualidade e uma experiência gastronômica inesquecível. Estamos ansiosos para recebê-lo e compartilhar com
+            você o melhor da nossa culinária.
+            <br><br>
+            Restaurante Paladar - onde cada prato conta uma história e cada refeição é uma celebração!
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  </section>
+
+   <!--Cardápio-->
+
+  <div class="bloco_cardapio">
+    <table class="tb_cardapio">
+      <tr>
+        <td>
+          <div class="card">
+            <img src="imgs/Feijoada.png">
+            <div>
+              <h1>Feijoada</h1>
+              <h2>Acompanha arroz, feijão preto, couve e farofa.</h2>
+              <span>R$ 39,90</span>
+              <button class="bt-card"><a href="https://wa.me/556100000000">Fazer pedido</a></button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="imgs/Strogonoff .png">
+            <div>
+              <h1>Strogonoff</h1>
+              <h2>Acompanha arroz, batata palha e salada tropical.</h2>
+              <span>R$ 55,50</span>
+              <button class="bt-card"><a href="https://wa.me/556100000000">Fazer pedido</a></button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="imgs/churrasco.png">
+            <div>
+              <h1>Churrasco</h1>
+              <h2>Acompanha arroz, feijão tropeiro e mandioca.</h2>
+              <span>R$ 69,90</span>
+              <button class="bt-card"><a href="https://wa.me/556100000000">Fazer pedido</a></button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="imgs/galinhada.png">
+            <div>
+              <h1>Galinhada</h1>
+              <h2>Acompanha feijão carioca, farofa de pele de grango e salada.</h2>
+              <span>R$ 49,50</span>
+              <button class="bt-card"><a href="https://wa.me/556100000000">Fazer pedido</a></button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="imgs/macarronada.png">
+            <div>
+              <h1>Spaguete</h1>
+              <h2>Acompanha molho branco ou vermelho, queijo, azeitona e cheiro verde.</h2>
+              <span>R$ 29,90</span>
+              <button class="bt-card"><a href="https://wa.me/556100000000">Fazer pedido</a></button>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!--Fale conosco - formulário-->
+  <section id="fale-conosco">
+  <div class="fale_conosco">
+    <form class="form_fale_conosco" action="cadastro.php" method="post">
+      <fieldset>
+        <legend>FALE CONOSCO</legend><br>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome"><br>
+        <label for="fone">Fone:</label>
+        <input type="text" name="fone"><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email"><br><br>
+        <label for="texto">Deixe sua mensagem:</label><br>
+        <textarea name="texto" cols="40" rows="10"></textarea>
+      </fieldset>
+      <input id="botao" type="submit" class="enviar" onclick="enviar();" value="Enviar">
+    </form>
+  </div>
+  </section>
+
+   <!--Rodapé-->
+
+  <footer>
+    <div class="rodape">
+      <p class="text_rodape">
+        Rua Alegre, 123 Cidade Brasileira <br>
+        Fone: (12) 3456-7890 <br>
+        e-mail: restaurante_paladar@restaurante.com.br <br><br>
+        &copy; 2024 Restaurante. Todos os direitos reservados <br>
+        Política de Privacidade | Termos de uso.
+      </p>
+      <div class="voltar">
+        <button class="bt-voltar"><a href="#home">VOLTAR</a></button>
+      </div>
+    </div>
+    
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
